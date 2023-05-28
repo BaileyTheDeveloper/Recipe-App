@@ -12,6 +12,7 @@ function RecipeCreate({ createRecipe }) {
 	const [ingredients, setIngredients] = useState("");
 	const [preparation, setPreparation] = useState("");
 	
+	// submit handler that creates new recipe and clears form.
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		console.log("Submitted:", name, cuisine, photo, ingredients, preparation);

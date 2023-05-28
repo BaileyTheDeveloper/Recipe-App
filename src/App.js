@@ -8,13 +8,13 @@ import RecipeView from "./RecipeView";
 function App() {
 	const [recipes, setRecipes] = useState(RecipeData);
 
+	// function to delete existing recipe
 	const deleteRecipe = (indexToDelete) =>
 		setRecipes((recipes) =>
 			recipes.filter((post, index) => index !== indexToDelete)
 		);
 
-	// TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
-	// TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
+	// function to add a new recipe
 	const createRecipe = (newRecipe) =>
 		setRecipes((recipes) => [...recipes, newRecipe]);
 
